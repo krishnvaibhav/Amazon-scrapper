@@ -25,6 +25,6 @@ target_price = 550
 if price < target_price :
     with smtplib.SMTP("smtp.gmail.com",587) as connection:
         connection.starttls()
-        connection.login(user="anonymousrobot974@gmail.com",password="robot@974")
-        connection.sendmail(from_addr="anonymousrobot974@gmail.com",to_addrs="krishnvaibhav.12c1@gmail.com",
+        connection.login(user="{mail id}",password="{password}")
+        connection.sendmail(from_addr="{mail id}",to_addrs="{password}",
                             msg=f"subject:Price target achieved \n\n the price is currently at {price} quickly purchase it")
